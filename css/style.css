@@ -9,6 +9,7 @@
   --border-color: #f5f4fa;
   --bg-secondary-color: #e7e9fc;
   --secondary-border-color: #8e8f99;
+  --footer-link-focus: #31d0aa; 
 }
 
 html {
@@ -329,6 +330,7 @@ body {
   background-color: var(--logo-color);
   color: var(--light-font-color);
   border-radius: 50% 50%;
+  
 }
 .socials-link:hover,
 .socials-link:focus,
@@ -352,9 +354,8 @@ body {
 }
 .customers-item {
   padding: 16px 32px;
- 
   width: 168px;
-  height: 88;
+  height: 88px;
 }
 .customers-item:hover,
 .customers-item:active,
@@ -406,6 +407,14 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+card-project-link{
+  display: block;
+}
+.card-project-link:hover,
+.card-project-link:focus{
+  border: 1px solid #F4F4FD;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .card-project-description {
   padding: 32px 16px;
   border: 1px solid var(--bg-secondary-color);
@@ -439,9 +448,17 @@ body {
 .footer-socials {
 }
 .socials-title {
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 1.5;
+  letter-spacing: 0.02em;
   color: var(--main-light-color);
   margin-bottom: 16px;
+}
+
+.socials-footer{
+  gap: 16px;
+}
+.socials-link-footer:hover{
+background-color: var(--footer-link-focus);
 }
